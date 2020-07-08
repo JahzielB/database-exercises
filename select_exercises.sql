@@ -5,4 +5,4 @@ SELECT release_date AS 'The year Sgt. Pepper''s Lonely Hearts Club Band was rele
 SELECT genre AS 'The genre for Nevermind' FROM albums WHERE name = 'Nevermind';
 SELECT name AS 'Which albums were released in the 1990s' FROM albums WHERE release_date > '1989' AND release_date < '2000';
 SELECT name AS 'Which albums had less than 20 million certified sales' FROM albums WHERE sales < '20';
-SELECT name AS 'All the albums with a genre of "Rock"' FROM albums WHERE genre = 'Rock';
+SELECT name AS 'All the albums with a genre of "Rock"' FROM albums WHERE genre LIKE '%rock%';
